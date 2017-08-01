@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>皮肤</title>
+    <script src="isLand.js"></script>
+    <link rel="stylesheet" href="style/detail.css">
+    <style>
+        @keyframes blink {
+            78% {
+                color: inherit;
+                text-shadow: inherit;
+            }
+            79% {
+                color: #333;
+            }
+            80% {
+                text-shadow: none;
+            }
+            81% {
+                color: inherit;
+                text-shadow: inherit;
+            }
+            82% {
+                color: #333;
+                text-shadow: none;
+            }
+            83% {
+                color: inherit;
+                text-shadow: inherit;
+            }
+            92% {
+                color: #333;
+                text-shadow: none;
+            }
+            92.5% {
+                color: inherit;
+                text-shadow: inherit;
+            }
+        }
+        
+        body {
+            background-image: url('images/28.jpg');
+            color: #fff;
+        }
+        
+        section>button {
+            /*display: block;*/
+            height: 150px;
+            width: 300px;
+            margin: 20px;
+        }
+        .disabled:hover{
+            background: rgba(0, 0, 22, .4);
+            border-color: red;
+            color: red;
+            cursor: default;
+        }
+        
+        h2 {
+            text-shadow: 20px 20px 150px, 0 0 2px, 0 0 1em cornflowerblue, 0 0 0.5em cornflowerblue, 0 0 0.1em cornflowerblue, 0 10px 3px #000;
+        }
+        
+        sub {
+            display: block;
+            font: 100 15px "楷体";
+            /*weight,size,family*/
+            color: #fff;
+            top: 60px;
+            left: 0px;
+            position: relative;
+            letter-spacing: 3px;
+        }
+        
+        sub span {
+            font-size: 18px;
+            text-shadow: 20px 20px 150px, 0 0 2px, 0 0 1em darkviolet, 0 0 0.5em darkviolet, 0 0 0.1em darkviolet, 0 10px 3px #000;
+            animation: blink linear infinite 2s;
+        }
+        
+        sub a {
+            text-decoration: none;
+            color: sandybrown;
+        }
+        
+        sub a:hover {
+            color: #fff;
+        }
+        section{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <h2>所有皮肤<sub>亲爱的<span></span>，您的总分是：<span></span></sub></h2>
+
+    <section>
+        <button onclick="upSkin('../images/d6.jpg')">红</button>
+        <button>蓝</button>
+        <button>黄</button>
+        <button>黑</button>
+    </section>
+    
+
+    <div id="back">
+        <a href="formal.html"><button>返回</button></a>
+    </div>
+
+    <script src="skin.js"></script>
+</body>
+
+</html>

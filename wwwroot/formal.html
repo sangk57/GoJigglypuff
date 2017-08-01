@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>奔跑吧胖丁</title>
+    <link rel="stylesheet" href="style/bg.css">
+    <script src="isLand.js"></script>
+    <style>
+        div {
+            width: 30%;
+            height: 30%;
+            padding-top: 10%;
+            display: inline-block;
+        }
+        
+        sub {
+            display: block;
+            font: 100 15px "楷体";
+            /*weight,size,family*/
+            color: #fff;
+            top: 15px;
+            left: 250px;
+            position: relative;
+            letter-spacing: 3px;
+        }
+        
+        sub span {
+            font-size: 18px;
+            text-shadow: 20px 20px 150px, 0 0 2px, 0 0 1em darkviolet, 0 0 0.5em darkviolet, 0 0 0.1em darkviolet, 0 10px 3px #000;
+            animation: blink linear infinite 2s;
+        }
+        
+        sub a {
+            text-decoration: none;
+            color: sandybrown;
+        }
+        
+        sub a:hover {
+            color: #fff;
+        }
+        
+        button:hover {
+            color: #000;
+            background-size: cover;
+            background-position: top;
+            border: none;
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            -moz-transform: rotate(0deg);
+            /* Firefox */
+            -webkit-transform: rotate(0deg);
+            /* Safari 和 Chrome */
+            -o-transform: rotate(0deg);
+            transition: border .3s, background .3s, transform .3s;
+            cursor: pointer;
+        }
+        
+        .skin button:hover {
+            /*1,29,30*/
+            background-image: url('images/28.jpg');
+        }
+        
+        .checkpoint button:hover {
+            background-image: url('images/29.jpg');
+        }
+        
+        .ranking button:hover {
+            background-image: url('images/23.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <video src="video/1.mp4" autoplay muted loop></video>
+
+    <section>
+        <h1>奔跑吧<b>胖丁</b><sub>欢迎回来,<span></span><a href="/logout">&#x3000;&#x3000;【退出登录】</a></sub></h1>
+
+
+
+
+
+        <div class="skin">
+            <a href="skin.html"><button>皮肤</button></a>
+        </div>
+
+        <div class="checkpoint">
+            <a href="checkpoint.html"><button>关卡</button></a>
+        </div>
+        <div class="ranking">
+            <a href="ranking.html"><button>高分榜</button></a>
+        </div>
+    </section>
+    <script src="formal.js"></script>
+</body>
+
+</html>

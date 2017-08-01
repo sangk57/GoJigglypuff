@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>选择关卡</title>
+    <script src="isLand.js"></script>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            text-align: center;
+            background-size: cover;
+            background-image: url('images/29.jpg');
+        }
+        
+        header {
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 22, .3);
+            position: absolute;
+            z-index: -9;
+        }
+        
+        h2 {
+            color: #fff;
+            font-size: 60px;
+            letter-spacing: 10px;
+            text-shadow: 20px 20px 150px, 0 0 2px, 0 0 1em cyan, 0 0 0.5em cyan, 0 0 0.1em cyan, 0 10px 3px #000;
+        }
+        
+        div {
+            width: 30%;
+            height: 30%;
+            padding-top: 8%;
+            display: inline-block;
+        }
+        
+        p {
+            display: inline;
+            font-size: 14px;
+            position: relative;
+        }
+        
+        button {
+            width: 500px;
+            height: 250px;
+            border: 3px solid #fff;
+            background: none;
+            color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            transform: rotate(7deg);
+            -ms-transform: rotate(7deg);
+            /* IE 9 */
+            -moz-transform: rotate(7deg);
+            /* Firefox */
+            -webkit-transform: rotate(7deg);
+            /* Safari 和 Chrome */
+            -o-transform: rotate(7deg);
+            transition: color .3s, background .3s, transform .3s;
+        }
+        
+        button:hover {
+            background-color: #fff;
+            background-size: cover;
+            background-position: top;
+            border: none;
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            /* IE 9 */
+            -moz-transform: rotate(0deg);
+            /* Firefox */
+            -webkit-transform: rotate(0deg);
+            /* Safari 和 Chrome */
+            -o-transform: rotate(0deg);
+            transition: border .3s, background .3s, transform .3s;
+            cursor: pointer;
+        }
+        
+        .first button:hover {
+            color: #333;
+            background-image: url('images/bg8.jpg');
+        }
+        
+        .second button:hover {
+            background-image: url('images/bg6.jpg');
+        }
+        
+        .third button:hover {
+            background-image: url('images/bg7.jpg');
+        }
+        
+        #back button{
+            width: 100px;
+            height: 55px;
+            position: absolute;
+            font-size: unset;
+            top: 30px;
+            right: 30px;
+        }
+        
+        #back button:hover{
+          color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <h2>选择关卡</h2>
+
+
+    <div class="first">
+        <a href="s1.html"><button>大神：走进冰雪世界<br> <p>【完成度：<span></span>】</p>  </button></a> 
+    </div>
+    <div class="second">
+        <a href="s2.html"><button>老桑：绝处逢生<br> <p>【完成度：<span></span>】</p>  </button></a> 
+    </div>
+    <div class="third">
+        <a href="s3.html"><button>老胡：经历过绝望么<br> <p>【完成度：<span></span>】</p>  </button></a> 
+    </div>
+
+
+    <!--<div>
+        <h3>冰天</h3>
+        <a href="main.html"><button>第一关（难度★）</button></a> 完成度：<span></span>
+        <a href="main.html"><button>第二关（难度★★★）</button></a> 完成度：<span></span>
+        <a href="main.html"><button>第三关（难度★★★★★）</button></a> 完成度：<span></span>
+    </div>
+    
+    <div>
+        <h3>海洋</h3>
+        <a href="main.html"><button>第一关（难度★）</button></a> 完成度：<span></span>
+        <a href="main.html"><button>第二关（难度★★★）</button></a> 完成度：<span></span>
+        <a href="main.html"><button>第三关（难度★★★★★）</button></a> 完成度：<span></span>
+    </div>
+    
+    <div>
+        <h3>科技</h3>
+        <a href="main.html"><button>第一关（难度★）</button></a> 完成度：<span></span>
+        <a href="main.html"><button>第二关（难度★★★）</button></a> 完成度：<span></span>
+        <a href="main.html"><button>第三关（难度★★★★★）</button></a> 完成度：<span></span>
+    </div>-->
+
+    <div id="back">
+        <a href="formal.html"><button>返回</button></a>
+    </div>
+
+    <script src="checkPoint.js"></script>
+</body>
+
+</html>
